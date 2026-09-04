@@ -78,19 +78,16 @@ function renderProjects(showAll = false) {
   projectsGrid.innerHTML = (showAll ? projects : projects.slice(0, 3))
     .map(
       (project) => `
-        <article class="group bg-slate-800 bg-opacity-50 backdrop-blur rounded-xl overflow-hidden hover:bg-opacity-80 transition-all duration-300 hover:-translate-y-2">
+        <article class="group bg-slate-800 bg-opacity-50 backdrop-blur rounded-xl overflow-hidden hover:bg-opacity-80 transition-all duration-300">
           <div class="aspect-video overflow-hidden bg-slate-900">
             <a href="${project.url}" target="_blank" rel="noreferrer" class="block h-full">
-              <img src="${project.image}" alt="${project.alt}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+              <img src="${project.image}" alt="${project.alt}" class="w-full h-full object-cover" />
             </a>
           </div>
           <div class="p-6 space-y-4">
             <h3 class="text-xl font-bold">${project.title}</h3>
             <p class="text-gray-300 text-sm">${project.description}</p>
             <div class="flex flex-wrap gap-2">${technologyTags(project.technologies)}</div>
-            <a href="${project.url}" target="_blank" rel="noreferrer" class="inline-flex items-center text-gray-400 hover:text-cyan-400 transition-colors mt-2">
-              View on GitHub <i class="fab fa-github ml-2" aria-hidden="true"></i>
-            </a>
           </div>
         </article>`
     )
