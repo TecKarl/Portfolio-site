@@ -5,15 +5,15 @@ const projects = [
     image: "Images/interndo.png",
     alt: "Interndo",
     url: "https://github.com/TecKarl/internship-management",
-    technologies: ["Python", "Django", "React"]
+    technologies: ["Django", "React"]
   },  
   {
-    title: "AI Image Recognition",
-    description: "Image recognition tool powered by GROQ APIs with a Streamlit interface.",
-    image: "Images/streamlit_image.png",
-    alt: "AI Image Recognition Tool",
-    url: "https://github.com/TecKarl/ACES-MEETUP",
-    technologies: ["Python", "Streamlit", "Groq API"]
+    title: "Tina's Couture",
+    description: "An E-commerce webapp for a local fashion shop with admin and customer roles, and all necessary CRUD functionalities.",
+    image: "Images/tinas_couture.png",
+    alt: "Tina's Couture",
+    url: "https://github.com/TecKarl/tinascouture",
+    technologies: ["Django"]
   },
   {
     title: "Portfolio Page",
@@ -21,7 +21,15 @@ const projects = [
     image: "Images/portfolio_page_image.png",
     alt: "Portfolio Website",
     url: "https://github.com/TecKarl/Portfolio-site",
-    technologies: ["HTML", "CSS", "Tailwind"]
+    technologies: ["HTML & CSS", "JavaScript"]
+  },
+   {
+    title: "AI Image Description",
+    description: "Image description tool powered by GROQ APIs with a Streamlit interface.",
+    image: "Images/streamlit_image.png",
+    alt: "AI Image Description Tool",
+    url: "https://github.com/TecKarl/ACES-MEETUP",
+    technologies: ["Python", "Streamlit", "Groq API"]
   },
   {
     title: "Task Manager App",
@@ -29,7 +37,7 @@ const projects = [
     image: "Images/task_manager.png",
     alt: "Task Manager Application",
     url: "https://github.com/TecKarl/Full-Stack-Task-Manager-App",
-    technologies: ["HTML", "CSS", "JavaScript", "FastAPI"]
+    technologies: ["HTML & CSS", "JavaScript", "FastAPI"]
   },
   {
     title: "Blog App",
@@ -37,7 +45,7 @@ const projects = [
     image: "Images/django_blog.png",
     alt: "Django Blog Application",
     url: "https://github.com/TecKarl/django-blog",
-    technologies: ["Django", "HTML", "CSS", "Tailwind"]
+    technologies: ["Django", "HTML & CSS"]
   }
 ];
 
