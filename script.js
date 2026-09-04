@@ -1,11 +1,12 @@
 const projects = [
   {
     title: "Interndo",
-    description: "A web application for managing university student internships, built with Django and React",
+    description: "A web application for managing university student internships, built with Django and React.",
     image: "Images/interndo.png",
     alt: "Interndo",
     url: "https://github.com/TecKarl/internship-management",
-    technologies: ["Django", "React"]
+    technologies: ["Django", "React", "Vercel", "Supabase", "Render"],
+    hosted_site: "https://interndo.vercel.app/"
   },  
   {
     title: "Tina's Couture",
@@ -13,7 +14,8 @@ const projects = [
     image: "Images/tinas_couture.png",
     alt: "Tina's Couture",
     url: "https://github.com/TecKarl/tinascouture",
-    technologies: ["Django"]
+    technologies: ["Django", "Render", "Supabase"],
+    hosted_site: "https://www.tinascouture.shop/"
   },
   {
     title: "Portfolio Page",
@@ -21,7 +23,7 @@ const projects = [
     image: "Images/portfolio_page_image.png",
     alt: "Portfolio Website",
     url: "https://github.com/TecKarl/Portfolio-site",
-    technologies: ["HTML & CSS", "JavaScript"]
+    technologies: ["HTML & CSS", "JavaScript", "Vercel"]
   },
    {
     title: "AI Image Description",
@@ -88,6 +90,9 @@ function renderProjects(showAll = false) {
             <h3 class="text-xl font-bold">${project.title}</h3>
             <p class="text-gray-300 text-sm">${project.description}</p>
             <div class="flex flex-wrap gap-2">${technologyTags(project.technologies)}</div>
+            ${project.hosted_site ? `<a href="${project.hosted_site}" target="_blank" rel="noreferrer" class="inline-flex items-center text-slate-400 hover:text-slate-300 transition-colors mt-2">
+              Visit Site <i class="fas fa-external-link-alt ml-2" aria-hidden="true"></i>
+            </a>` : ""}
           </div>
         </article>`
     )
